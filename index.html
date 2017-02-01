@@ -3,17 +3,30 @@
 <head>
 	<title>Kiosko Acatlan</title>
 </head>
+<script type="text/javascript">
+	function verificar(){
+		var inputNCuenta = document.loandata.inputNCuenta.value;
+
+		if((inputNCuenta.length ==9) && (inputNCuenta == Number.POSITIVE_INFINITY)){
+			window.alert("tu numero de cuenta esta bien");
+
+		}
+		else{
+			window.alert("ingresa un numero de cuenta real");
+		}
+	}
+</script>
 <body>
 	<from>
 		<div>
 			<label for="">Numero de cuenta</label>
-			<input type="text" id="inputNCuenta" placeholder="Cuenta">
+			<input type="text" onchange="verificar();" id="inputNCuenta" placeholder="Cuenta">
 		</div>
 		<div>
 			<label for="">Password</label>
 			<input type="password" id="password" placeholder="Password">
 		</div>
-		<button type="button" onclick='window.alert("ok")' class="btn btn-default">Submit</button>
+		<button type="button" onclick='verificar();' class="btn btn-default">Submit</button>
 	</from>
 </body>
 </html>
