@@ -10,7 +10,7 @@ header{
 }
 .acceso{
 	background: rgba(0, 43, 122, 0.7);
-	width: 33%;
+	width: 45%;
 	padding: 5%;
 	position: relative;
 	top: -15px;
@@ -32,7 +32,7 @@ header{
 }
 .usr-log{
 	text-align: center;
-	width: 50%;
+	width: 40%;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 4px;
     -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
@@ -41,6 +41,6 @@ header{
 }
 
 .usr-log:hover {
-    width: 65%;
+    width: 55%;
 
 }
