@@ -12,7 +12,7 @@
 
 	<div class="acceso">
 		<h3>Bienvenido</h3>
-		<from name="myForm" onsubmit="return verificar()" method="post">
+		<form name="myForm" onsubmit="return verificar()" method="post">
 			<div>
 				<input class="usr-log" name ="numeroCuenta" type="text" onchange="verificar();" id="numeroCuenta" placeholder="Cuenta">
 				 
@@ -22,7 +22,7 @@
 				<input class="usr-log" name="pw" type="password" id="password" placeholder="Password">
 			</div>
 			
-		</from>
+		</form>
 		<br>
 		<button type="button" onclick='verificar();' class="button">Acceder</button>
 		<p id="erroracces"></p>
